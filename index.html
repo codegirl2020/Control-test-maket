@@ -1,18 +1,93 @@
-<!DOCTYPE html>
+<!DOCTYPE html>§
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <div class="wrapper">
       <div class="container">
         <header class="header">
-          <img class="header__logo" src="img/ZET.png" alt="" />
+          <section class="top">
+            <img class="top__logo" src="img/ZET.png" alt="" />
+            <nav class="nav">
+              <h2 class="nav__title">MENU</h2>
+              <button class="hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            </nav>
+          </section>
+          <section class="intro">
+            <h1 class="intro__title">Something Nothing</h1>
+            <p class="intro__desc">
+              Professional digital marketing company with variety of services.
+              Team of professional marketers will provide a turn-key service to
+              your company.
+            </p>
+            <a href="#" class="intro__link btn">Let's Talk</a>
+          </section>
+          <div class="intro__arrow">
+            <i class="fas fa-chevron-down"></i>
+          </div>
         </header>
       </div>
+      <section class="middle">
+        <main class="services">
+          <h1 class="services__title">Services</h1>
+          <p class="services__desc">List of our popular services</p>
+        </main>
+        <ul class="services__list">
+          <li class="services__item">
+            <img src="img/icon/laptop3.png" alt="laptop" />
+            <h3 class="services__item_title">Fully Responsive</h3>
+            <p class="services__item_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae, unde! Voluptate minus quo alias quia, iste quae.
+            </p>
+          </li>
+          <li class="services__item">
+            <img src="img/icon/adjust2.png" alt="adjust" />
+            <h3 class="services__item_title">Easy Customize</h3>
+            <p class="services__item_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae, unde! Voluptate minus quo alias quia, iste quae.
+            </p>
+          </li>
+          <li class="services__item">
+            <img src="img/icon/map7.png" alt="map" />
+            <h3 class="services__item_title">Seo Ready</h3>
+            <p class="services__item_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae, unde! Voluptate minus quo alias quia, iste quae.
+            </p>
+          </li>
+          <li class="services__item">
+            <img src="img/icon/heart19.png" alt="heart" />
+            <h3 class="services__item_title">Made with love</h3>
+            <p class="services__item_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae, unde! Voluptate minus quo alias quia, iste quae.
+            </p>
+          </li>
+        </ul>
+      </section>
     </div>
+
+    <script>
+      var hamburger = document.querySelector(".hamburger");
+      var nav = document.querySelector(".hamburger");
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("is-active");
+        nav.classList.toggle("is-active");
+      });
+    </script>
   </body>
 </html>
