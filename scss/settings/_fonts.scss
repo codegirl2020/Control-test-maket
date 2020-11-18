@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Montserrat-Bold";
   src: local("Montserrat Bold"), local("Montserrat-Bold"),
     url("../../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"),
     url("../../fonts/Montserrat/Montserrat-Bold.woff") format("woff");
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Montserrat-Regular";
   src: local("Montserrat Regular"), local("Montserrat-Regular"),
     url("../../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"),
     url("../../fonts/Montserrat/Montserrat-Regular.woff") format("woff");
@@ -19,7 +19,7 @@
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Open Sans-ExtraBold";
   src: local("Open Sans ExtraBold"), local("OpenSans-ExtraBold"),
     url("../../fonts/OpenSans/OpenSans-ExtraBold.woff2") format("woff2"),
     url("../../fonts/OpenSans/OpenSans-ExtraBold.woff") format("woff");
@@ -29,7 +29,7 @@
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Open Sans-Light";
   src: local("Open Sans Light"), local("OpenSans-Light"),
     url("../../fonts/OpenSans/OpenSans-Light.woff2") format("woff2"),
     url("../../fonts/OpenSans/OpenSans-Light.woff") format("woff");
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Open Sans-Regular";
   src: local("Open Sans Regular"), local("OpenSans-Regular"),
     url("../../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"),
     url("../../fonts/OpenSans/OpenSans-Regular.woff") format("woff");
