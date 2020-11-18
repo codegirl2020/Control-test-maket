@@ -1,1 +1,10 @@
+@import "settings/vars";
+
 @import "settings/fonts";
+$hamburger-types: ("collapse");
+@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+@import "settings/reset";
+
+@import "settings/mixins";
+
+@import "parts/header";
