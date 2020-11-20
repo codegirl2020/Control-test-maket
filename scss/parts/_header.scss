@@ -2,33 +2,28 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%),
     url(../img/bg-1.jpg) center center / cover;
   height: 80vh;
+  overflow: hidden;
 }
 
 .top {
-  padding-top: rem(15px);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  padding-top: rem(25px);
+  @include flex-type($main: null, $cross: center)
 }
 
 .nav {
-  display: flex;
-  align-items: center;
+  margin-left: auto;
 }
 
 .nav__title {
   font-family: $font-mr;
   font-size: rem(14px);
   color: $accent-color;
+  margin-left: rem(20px);
 }
 .intro {
   margin-top: rem(100px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  text-align: center;
+  flex-direction: column; 
+  @include flex-type ($main: center, $cross: center)
 }
 
 .intro__title {
@@ -37,28 +32,45 @@
   line-height: rem(40px);
   color: $accent-color;
 }
+
 .intro__desc {
   margin-top: 0;
-  width: rem(625px);
+  max-width: 625px;
+  text-align: center;
   font-family: $font-osl;
   font-size: rem(17px);
   line-height: rem(25px);
   color: $accent-color;
 }
+
 .intro__link {
   color: $accent-color;
   text-decoration: none;
   text-transform: uppercase;
   font-family: $font-mb;
   font-size: rem(13px);
-  line-height: rem(36px);
 }
 
 .fa-chevron-down {
-  padding: 10px;
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
   color: #fff;
   border: 1px solid #fff;
   border-radius: 50%;
+}
+
+.fa-chevron-down::after{
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  top: calc(50% + 15px);
+  left: 50%;
+  transform: translateX(-50%);
+  height: 300px;
+  width: 1px;
 }
 .intro__arrow {
   margin-top: 50px;
