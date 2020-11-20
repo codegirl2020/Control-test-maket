@@ -1,0 +1,77 @@
+
+.team__container{
+  margin: 0 auto;
+  max-width: 1170px;
+  text-align: center;
+}
+
+.team {
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%),
+    url(../img/bg-2.jpg) center center / cover;
+  height: 100vh;
+}
+
+.team__title {
+  color: $color-white;
+}
+
+.team__desc{
+  color: $color-white;
+}
+.team__head{
+  margin-top: rem(50px);
+  padding-top: rem(30px);
+
+}
+.team__head::after{
+  content: '';
+  border-bottom: 2px solid $color-white;
+  width: 40px;
+  position: absolute;
+  top: 110%;
+  left: 48%;
+}
+.team__board{
+  @include flex-type ($main: space-between, $cross: null);
+  margin-top: rem(50px);
+}
+.team__item{
+  background: $color-white;
+  text-align: center;
+}
+.team__subtitle{
+  font-family: $font-mb;
+  font-size: rem(15px);
+  line-height: rem(20px);
+  color: $main-color;
+  margin-bottom: -15px;
+}
+.team__text{
+  font-family: $font-mr;
+  font-size: rem(14px);
+  line-height: rem(20px);
+  color: $main-color;
+}
+.team__icon{
+  margin-bottom: rem(26px);
+}
+.team__link{
+  margin-top: rem(40px);
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: $font-mb;
+  color: $accent-color;
+  font-size: rem(13px);
+  text-decoration: none;
+}
+
+.brands{
+  background: $color-offwhite;
+  height: 20vh;
+}
+.brands_container{
+  @include flex-type ($main: space-around, $cross: center);
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: rem(50px);
+}
