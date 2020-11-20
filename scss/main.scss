@@ -1,12 +1,23 @@
 @import "settings/vars";
 @import "settings/accessories";
+@import "settings/mixins";
 
 @import "settings/fonts";
-$hamburger-types: ("collapse");
+$hamburger-types: ("spin");
 @import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+// fontawesome
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+
 @import "settings/reset";
 @import "settings/hamburger";
 
-@import "settings/mixins";
+
 
 @import "parts/header";
+@import "parts/middle";
+@import "parts/works";
+@import "parts/clients";
+@import "parts/team";
+@import "parts/pricing";
