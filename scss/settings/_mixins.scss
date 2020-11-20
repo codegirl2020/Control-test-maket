@@ -1,3 +1,10 @@
 @function rem($px) {
-  @return $px/$font-base + 0rem;
+  @return $px / 16px + 0rem;
+}
+
+
+@mixin flex-type ($main: null, $cross: null) {
+    display: flex;
+    justify-content: $main;
+    align-items: $cross;
 }
