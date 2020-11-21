@@ -6644,7 +6644,7 @@ body {
 
 .team {
   background: linear-gradient(rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(../img/bg-2.jpg) center center/cover;
-  height: 100vh;
+  padding: 3rem 0;
 }
 
 .team__title {
@@ -6721,6 +6721,11 @@ body {
   max-width: 1170px;
   margin: 0 auto;
   padding-top: 3.125rem;
+}
+
+.pricing__container {
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */
