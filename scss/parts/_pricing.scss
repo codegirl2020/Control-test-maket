@@ -1,0 +1,62 @@
+.pricing__container{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.pricing__list{
+  padding-top: rem(74px);
+  @include flex-type ($main: center, $cross: center);
+}
+
+.pricing__list_item{
+  list-style: none;
+  text-align: center;
+  flex: 0 1 35%;
+}
+.pricing__list_title{
+  font-family: $font-mb;
+  font-size: rem(20px);
+  // line-height: rem(36px);
+  color: $color-dark;
+}
+.pricing__list_tag{
+  font-family: $font-mr;
+  font-size: rem(45px);
+  line-height: rem(9px);
+  color: $color-dark;
+}
+.pricing__list_text{
+  margin-top: -10px;
+  font-family: $font-osl;
+  font-size: rem(14px);
+  line-height: rem(9px);
+  color: $main-color;
+  text-transform: uppercase;
+}
+
+.pricing__list_wrap{
+  padding-bottom: 10px;
+  border: 1px solid #dddddd;
+}
+.unique{
+  padding-top: rem(60px);
+  margin-bottom: rem(-10px);
+  border-top: 6px solid $color-dark;
+}
+.pricing__text{
+  margin-bottom: 35px;
+}
+.pricing__content{
+  padding: rem(70px);
+  border: 1px solid #dddddd;
+}
+.pricing__link{
+  margin-top: 20px;
+  background-color: $color-dark;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: $font-mb;
+  text-transform: uppercase;
+  color: $accent-color;
+
+}
