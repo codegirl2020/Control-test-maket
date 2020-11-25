@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.contact__img{
+  width: 50%;
+}
+
 .form__img {
   background: linear-gradient(rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%),
   url(../img/bg-3.jpg) center center / cover;
@@ -28,21 +32,27 @@
 }
 .form-field{
   margin-left: rem(60px);
-  max-width: 100%;
+  width: 100%;
   padding: 15px 10px;
   box-sizing: border-box;
   border: 1px solid #f2f2f2;
   background-color: transparent;
   border-radius: 3px;
 }
+.message{
+  resize: vertical;
+  width: 100%;
+  outline: none;
+  overflow: auto;
+}
 .form-submit{
-  padding: 13px 16px;
+  margin-left: auto;
+  padding: 13px 20px;
+  cursor: pointer;
   font-family: $font-mb;
   font-size: rem(13px);
   color: $accent-color;
   background-color: transparent;
   border-radius: 3px;
-
-
 
 }
