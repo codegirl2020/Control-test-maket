@@ -1,7 +1,3 @@
-.pricing__container{
-  max-width: 1170px;
-  margin: 0 auto;
-}
 
 .pricing__list{
   padding-top: rem(74px);
@@ -16,7 +12,7 @@
 .pricing__list_title{
   font-family: $font-mb;
   font-size: rem(20px);
-  // line-height: rem(36px);
+  line-height: rem(36px);
   color: $color-dark;
 }
 .pricing__list_tag{
