@@ -8,3 +8,8 @@
     justify-content: $main;
     align-items: $cross;
 }
+@mixin media($screen-size) {
+  @media screen and (max-width: $screen-size) {
+    @content
+  }
+}
