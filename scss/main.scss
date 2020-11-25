@@ -2,6 +2,7 @@
 @import "settings/accessories";
 @import "settings/mixins";
 
+@import "../node_modules/swiper/swiper.scss";
 @import "settings/fonts";
 $hamburger-types: ("spin");
 @import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
