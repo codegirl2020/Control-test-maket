@@ -3,16 +3,10 @@
   padding: 40px 0;
 }
 .footer__container{
-  max-width: 1170px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-type($main: space-between, $cross:center);
 }
 .footer__logo_wrap{
-  display: flex;
-  align-items: center;
-  
+  @include flex-type($main: null, $cross:center);
 }
 .footer__text{
   margin-left: rem(30px);
@@ -22,8 +16,7 @@
   color: $main-color;
 }
 .footer__social{
-  display: flex;
-  align-items: center;
+  @include flex-type($main:null, $cross:center);
 }
 .footer__social_text{
   margin-right: rem(30px);
