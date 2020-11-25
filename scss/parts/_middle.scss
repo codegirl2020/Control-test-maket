@@ -1,12 +1,8 @@
 .middle{
   background-color: $bg-color;
-  max-height: 580px;
+ 
 }
 
-.middle__container{
-  margin: 0 auto;
-  max-width: 1170px;
-}
 .services{
   padding-top: rem(94px);
   position: relative;
@@ -41,12 +37,20 @@
 .services__list{
   display: flex;
   justify-content: space-evenly;
+
+  @include media(992px) {
+    flex-wrap: wrap;
+  }
 }
 
 .services__item{
   padding-top: rem(50px);
+  margin: 0 .5rem;
   text-align: center;
   list-style: none;
+  @include media(992px) {
+    flex-basis: 45%;
+  }
 }
 .services__item_icon{
   display: inline-flex;
@@ -63,7 +67,6 @@
 }
 
 .services__item_text{
-  max-width: 270px;
   color: $main-color;
   font-family: $font-osr;
   font-size: rem(14px);
