@@ -1,13 +1,36 @@
 
 .pricing__list{
-  padding-top: rem(74px);
-  @include flex-type ($main: center, $cross: center);
+  padding: rem(74px);
+  @include flex-type ($main: center);
+
+  @include media(1000px){
+    flex-wrap: wrap;
+  }
+  @include media(568px){
+    display: block;
+    padding: rem(74px) rem(16px);
+  }
 }
 
 .pricing__list_item{
   list-style: none;
   text-align: center;
-  flex: 0 1 35%;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  flex: 1 1 30%;
+  border-right: none;
+  @include media(1000px){
+    margin-top: rem(15px);
+    flex-basis: 75%;
+    border: 1px solid #ddd;
+  }
+
+  &:first-child {
+    border-left: 1px solid #dddddd;
+  }
+  &:last-child {
+    border-right: 1px solid #dddddd;
+  }
 }
 .pricing__list_title{
   font-family: $font-mb;
@@ -28,23 +51,49 @@
   line-height: rem(9px);
   color: $main-color;
   text-transform: uppercase;
+  @include media(1100px){
+    font-size: rem(16px);
+    line-height: rem(10px);
+  }
 }
 
 .pricing__list_wrap{
   padding-bottom: 10px;
-  border: 1px solid #dddddd;
+  
+  border-bottom: 1px solid #dddddd;
 }
-.unique{
-  padding-top: rem(60px);
-  margin-bottom: rem(-10px);
+.unique {
+  border: 1px solid #dddddd;
+  border-top: none;
+}
+.unique .pricing__list_wrap{
+  position: relative;
   border-top: 6px solid $color-dark;
+  margin-top: -45px;
+  padding: rem(30px) 0 rem(20px);
+  @include media(968px){
+    border-top: 1px solid #dddddd;
+  }
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -1px;
+    height: 100%;
+    width: 1px;
+    background: #ddd;
+  }
+  &::after {
+    left: auto;
+    right: -1px;
+  }
 }
 .pricing__text{
   margin-bottom: 35px;
 }
 .pricing__content{
   padding: rem(70px);
-  border: 1px solid #dddddd;
 }
 .pricing__link{
   margin-top: 20px;
@@ -54,5 +103,4 @@
   font-family: $font-mb;
   text-transform: uppercase;
   color: $accent-color;
-
 }
