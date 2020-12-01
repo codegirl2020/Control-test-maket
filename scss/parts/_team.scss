@@ -1,18 +1,19 @@
 
 .team__container{
-  margin: 0 auto;
-  max-width: 1170px;
   text-align: center;
 }
 
 .team {
   background: linear-gradient(rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%),
     url(../img/bg-2.jpg) center center / cover;
-  height: 100vh;
+
 }
 
 .team__title {
   color: $color-white;
+  @include media(420px){
+    font-size: rem(20px);
+  }
 }
 
 .team__desc{
@@ -28,16 +29,37 @@
   border-bottom: 2px solid $color-white;
   width: 40px;
   position: absolute;
-  top: 110%;
+  top: 95%;
   left: 48%;
 }
 .team__board{
   @include flex-type ($main: space-between, $cross: null);
   margin-top: rem(50px);
+
+  @include media(1100px){
+    flex-wrap: wrap;
+    @include flex-type ($main: center, $cross:null);
+  }
+  
 }
-.team__item{
+.team__img{
+  @include media(1100px){
+    width: 100%;
+  }
+}
+.team__item {
   background: $color-white;
   text-align: center;
+  @include media(1100px){
+  flex-basis: 30%;
+  margin: rem(20px);
+  }
+  @include media(668px){
+    flex-basis: 50%;
+  }
+  @include media(420px){
+    flex-basis: 70%;
+  }
 }
 .team__subtitle{
   font-family: $font-mb;
@@ -56,7 +78,7 @@
   margin-bottom: rem(26px);
 }
 .team__link{
-  margin-top: rem(40px);
+  margin: rem(40px);
   display: inline-block;
   text-transform: uppercase;
   font-family: $font-mb;
@@ -67,11 +89,25 @@
 
 .brands{
   background: $color-offwhite;
-  height: 20vh;
+
 }
-.brands_container{
+.brands__wrap{
   @include flex-type ($main: space-around, $cross: center);
-  max-width: 1170px;
-  margin: 0 auto;
-  padding-top: rem(50px);
+  padding: rem(50px);
+
+  @include media(1200px){
+    flex-wrap: wrap;
+  }
 }
+
+.brands__img{
+  @include media(900px){
+    margin-right: rem(30px);
+    margin-bottom: rem(30px);
+  }
+  @include media(420px){
+    margin-right: 0;
+    max-width: 50%;
+  }
+}
+
