@@ -6,7 +6,7 @@
 }
 
 .clients_text{
-  padding-top: rem(55px);
+  padding-top: rem(20px);
   color: $text-color;
   font-size: rem(16px);
   line-height: rem(26px);
@@ -16,7 +16,7 @@
 .clients_text::after{
   content: '"';
   color: $text-color;
-  font-size: rem(40px);
+  font-size: rem(8px);
   line-height: rem(26px);
   font-family: $font-mb;
   position: absolute;
@@ -33,6 +33,14 @@
 .slider__img{
   border: 1px solid transparent;
   border-radius: 50%;
+}
+.swiper-pagination-bullet {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-left: rem(10px);
 }
 
 .slider__title{
