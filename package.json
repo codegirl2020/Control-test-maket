@@ -1,0 +1,25 @@
+{
+  "name": "Control-test-maket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codegirl2020/Control-test-maket.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codegirl2020/Control-test-maket/issues"
+  },
+  "homepage": "https://github.com/codegirl2020/Control-test-maket#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "hamburgers": "^1.1.3",
+    "swiper": "^6.3.5"
+  }
+}
