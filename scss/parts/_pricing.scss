@@ -103,4 +103,11 @@
   font-family: $font-mb;
   text-transform: uppercase;
   color: $accent-color;
+  border: none;
+}
+
+.pricing__link:hover{
+  background-color: #ab9d5f;
+  color: #fff;
+
 }

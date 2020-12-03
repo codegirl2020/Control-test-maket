@@ -6560,17 +6560,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  left: 0;
-  top: -100%;
+  left: -100%;
+  top: 0;
   background: rgba(0, 0, 0, 0.8);
   width: 100%;
-  height: 100%;
+  height: 50%;
   box-sizing: border-box;
   transition: 0.5s;
 }
 
 .hidden-nav.is-active {
-  top: 0;
+  left: 0;
 }
 
 .hamburger {
@@ -6646,6 +6646,11 @@ body {
   font-size: 0.8125rem;
 }
 
+.intro__link:hover {
+  background-color: #81dbdb;
+  color: #4e5152;
+}
+
 .fa-chevron-down {
   position: relative;
   display: inline-block;
@@ -6706,7 +6711,7 @@ body {
 }
 
 .services__desc {
-  font-family: "OpenSans-Regular";
+  font-family: "Open Sans-Regular";
   color: #29323c;
   font-size: 0.875rem;
   line-height: 1.875rem;
@@ -6759,7 +6764,7 @@ body {
 
 .services__item_text {
   color: #29323c;
-  font-family: "OpenSans-Regular";
+  font-family: "Open Sans-Regular";
   font-size: 0.875rem;
   line-height: 1.375rem;
 }
@@ -6792,7 +6797,7 @@ body {
 }
 
 .clients_text {
-  font-family: "OpenSans-Regular";
+  font-family: "Open Sans-Regular";
   font-size: 1rem;
   line-height: 1.625rem;
 }
@@ -6823,7 +6828,8 @@ body {
 
 .slider__img {
   border: 1px solid transparent;
-  border-radius: 50%;
+  border-radius: 70%;
+  width: 10%;
 }
 
 .swiper-pagination-bullet {
@@ -6962,6 +6968,11 @@ body {
   color: #e8e8e8;
   font-size: 0.8125rem;
   text-decoration: none;
+}
+
+.team__link:hover {
+  background-color: #81dbdb;
+  color: #4e5152;
 }
 
 .brands {
@@ -7112,6 +7123,12 @@ body {
   font-family: "Montserrat-Bold";
   text-transform: uppercase;
   color: #e8e8e8;
+  border: none;
+}
+
+.pricing__link:hover {
+  background-color: #ab9d5f;
+  color: #fff;
 }
 
 .contact {
@@ -7162,7 +7179,7 @@ body {
 .form-group {
   max-width: 450px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   margin-bottom: 15px;
 }
@@ -7197,15 +7214,18 @@ body {
   overflow: auto;
 }
 
-.form-submit {
-  margin-left: auto;
-  padding: 13px 20px;
-  cursor: pointer;
+.form__submit {
+  background: transparent;
+  padding: 15px 20px;
   font-family: "Montserrat-Bold";
   font-size: 0.8125rem;
   color: #e8e8e8;
-  background-color: transparent;
   border-radius: 3px;
+}
+
+.form__submit:hover {
+  background-color: #723c29;
+  color: #e7efeb;
 }
 
 .footer {
@@ -7232,7 +7252,7 @@ body {
 
 .footer__text {
   margin-left: 1.875rem;
-  font-family: "OpenSans-Regular";
+  font-family: "Open Sans-Regular";
   font-size: 0.875rem;
   line-height: 1.375rem;
   color: #29323c;
@@ -7245,7 +7265,7 @@ body {
 
 .footer__social_text {
   margin-right: 1.875rem;
-  font-family: "OpenSans-Regular";
+  font-family: "Open Sans-Regular";
   font-size: 0.875rem;
   line-height: 1.375rem;
   color: #29323c;

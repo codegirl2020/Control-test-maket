@@ -85,6 +85,10 @@
   font-size: rem(13px);
 }
 
+.intro__link:hover{
+  background-color: rgba(129, 219, 219); 
+  color: rgba(78, 81, 82);
+}
 .fa-chevron-down {
   position: relative;
   display: inline-block;

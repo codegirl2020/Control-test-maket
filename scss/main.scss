@@ -10,6 +10,8 @@ $hamburger-types: ("spin");
 @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "../node_modules/magnific-popup/src/css/main.scss"
+
 
 @import "settings/reset";
 @import "settings/hamburger";

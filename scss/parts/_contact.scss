@@ -37,7 +37,7 @@
 .form-group{
   max-width: 450px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   margin-bottom: 15px;
   @include media(968px){
@@ -67,14 +67,16 @@
   outline: none;
   overflow: auto;
 }
-.form-submit{
-  margin-left: auto;
-  padding: 13px 20px;
-  cursor: pointer;
+.form__submit{
+  background: transparent;
+  padding: 15px 20px;
   font-family: $font-mb;
   font-size: rem(13px);
   color: $accent-color;
-  background-color: transparent;
   border-radius: 3px;
-
 }
+.form__submit:hover{
+  background-color: #723c29;
+  color: #e7efeb;
+}
+

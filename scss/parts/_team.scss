@@ -86,6 +86,10 @@
   font-size: rem(13px);
   text-decoration: none;
 }
+.team__link:hover{
+  background-color: rgba(129, 219, 219); 
+  color: rgba(78, 81, 82);
+}
 
 .brands{
   background: $color-offwhite;
