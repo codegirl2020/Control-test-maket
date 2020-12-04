@@ -30,8 +30,14 @@
 .hidden-nav__link{
   display: block;
   margin: 15px;
+  font-size: rem(20px);
   color: #fff;
   text-decoration: none;
+}
+.hidden-nav__link:hover{
+  text-decoration: underline;
+  color: rgba(129, 219, 219);
+
 }
 .top {
   padding-top: rem(25px);
@@ -114,3 +120,4 @@
   margin-top: 50px;
   text-align: center;
 }
+

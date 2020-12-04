@@ -74,6 +74,9 @@
   @include media(968px){
     border-top: 1px solid #dddddd;
   }
+  @include media(375px){
+    margin-top:0;
+  }
 
   &::before, &::after {
     content: '';
@@ -84,6 +87,7 @@
     width: 1px;
     background: #ddd;
   }
+
   &::after {
     left: auto;
     right: -1px;
