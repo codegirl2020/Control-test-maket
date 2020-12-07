@@ -7482,9 +7482,9 @@ body {
     border: 1px solid #ddd;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 375px) {
   .pricing__list_item {
-    margin: 0.625rem 1.25rem;
+    margin: 0;
   }
 }
 .pricing__list_item:first-child {
