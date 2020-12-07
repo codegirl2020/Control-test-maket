@@ -31,6 +31,9 @@
   position: absolute;
   top: 95%;
   left: 48%;
+  @include media(375px){
+    left: 45%;
+  }
 }
 .team__board{
   @include flex-type ($main: space-between, $cross: null);

@@ -14,6 +14,10 @@
   position: absolute;
   top: 85%;
   left: 48%;
+  @include media(375px){
+    left: 45%;
+    top: 90%;
+  }
 }
 
 .services__title{
@@ -34,6 +38,9 @@
   font-size: rem(14px);
   line-height: rem(30px);
   text-align: center;
+  @include media(375px){
+    text-align: center;
+  }
 }
 
 .services__list{
@@ -41,6 +48,7 @@
   justify-content: space-evenly;
   @include media(992px) {
     flex-wrap: wrap;
+    padding: 0;
   }
 }
 

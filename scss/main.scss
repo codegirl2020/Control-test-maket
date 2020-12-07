@@ -13,7 +13,7 @@ $hamburger-types: ("spin");
 @import "../node_modules/magnific-popup/src/css/main.scss";
 
 
-@import "settings/reset";
+@import "settings/_reset.scss";
 @import "settings/hamburger";
 
 
