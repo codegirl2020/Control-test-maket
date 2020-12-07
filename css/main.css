@@ -7482,6 +7482,11 @@ body {
     border: 1px solid #ddd;
   }
 }
+@media screen and (max-width: 420px) {
+  .pricing__list_item {
+    margin: 0.625rem 1.25rem;
+  }
+}
 .pricing__list_item:first-child {
   border-left: 1px solid #dddddd;
 }
