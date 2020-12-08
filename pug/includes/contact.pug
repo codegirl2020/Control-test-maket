@@ -1,0 +1,19 @@
+section.contact
+  img.contact__img(src='img/maps.jpg' alt='map')
+  .form__img
+    .form-wrap
+      form(action='#' method='Post' enctype='multipart/form-data')
+        .form-group
+          label.form-text(for='name') Name
+          input#name.form-field(type='text' name='name')
+        .form-group
+          label.form-text(for='email') Email
+          input#email.form-field(type='email' name='email')
+        .form-group
+          label.form-text(for='phone') Phone
+          input#phone.form-field(type='phone' name='phone')
+        .form-group
+          label.form-text(for='message') Message
+          textarea#message.form-field.message(name='message')
+        .form-group
+          button.form__submit Submit
