@@ -10,6 +10,9 @@
     display: block;
     padding: rem(74px) rem(16px);
   }
+  @include media(375px){
+    margin-top: rem(-10px);
+  }
 }
 
 .pricing__list_item{
@@ -20,15 +23,14 @@
   flex: 1 1 30%;
   border-right: none;
   @include media(1000px){
-    margin: rem(15px) rem(70px);
+    margin: rem(12px) rem(20px);
     flex-basis: 60%;
     border: 1px solid #ddd;
-    
-  }
-  @include media(375px){
+  @include media(420px){
     margin: 0;
   }
-
+  }
+  
   &:first-child {
     border-left: 1px solid #dddddd;
   }
@@ -100,6 +102,7 @@
 
 .pricing__text{
   margin-bottom: 35px;
+  
 }
 
 .pricing__content {

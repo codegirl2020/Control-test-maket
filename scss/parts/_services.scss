@@ -58,13 +58,11 @@
   text-align: center;
   list-style: none;
   
-  @include media(992px) 
-  {
+  @include media(992px){
     flex-basis: 45%;
     margin: 0 auto;
   }
-  @include media(568px)
-  {
+  @include media(568px){
     text-align: none;
     flex-basis: 100%;
   }
@@ -72,10 +70,18 @@
 }
 .services__item_icon{
   display: inline-flex;
-  padding: 30px 30px;
+  padding: rem(30px) rem(30px);
   border: 1px solid #485563;
   border-radius: 50%;
   background-image: radial-gradient(circle at center, #485563 0%, #485563 0%, #29323c 100%);
+  width: 100px;
+  height: 100px;
+}
+.laptop{
+  padding-left: rem(22px);
+}
+.heart{
+  padding-right: rem(-6px);
 }
 .services__item_title{
   color: $main-color;
@@ -90,9 +96,8 @@
   font-size: rem(14px);
   line-height: rem(22px);
 
-  @include media(568px)
-  {
-    flex-basis: 100%;
+  @include media(568px){
+   text-align: center;
   }
 
 }

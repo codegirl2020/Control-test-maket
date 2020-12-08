@@ -1,33 +1,29 @@
 
 .clients_text{
+  color: $text-color;
   font-family: $font-osr;
   font-size: rem(16px);
   line-height: rem(26px);
-}
-
-.clients_text{
-  padding-top: rem(20px);
-  color: $text-color;
-  font-size: rem(16px);
-  line-height: rem(26px);
   position: relative;
+  @include media(520px){
+    font-size: rem(14px);
+  }
 }
-
 .clients_text::after{
   content: '"';
   color: $text-color;
-  font-size: rem(8px);
+  font-size: rem(30px);
   line-height: rem(26px);
   font-family: $font-mb;
   position: absolute;
-  top: 120%;
+  top: 100%;
   left: 50%;
 
 }
 
 .slider{
  text-align: center;
- padding-top: rem(50px) ;
+ padding-top: rem(30px) ;
 }
 
 .slider__img{
@@ -36,6 +32,11 @@
   width: 100px;
   height: 100px;
   object-fit: cover;
+  margin-top: rem(25px);
+}
+
+.slider__info{
+  margin-top: rem(15px);
 }
 .swiper-pagination-bullet {
   display: inline-block;
@@ -47,7 +48,6 @@
   margin-top: rem(30px);
 
 }
-
 .slider__title{
   margin: 0 auto;
   font-family: $font-mb;
@@ -69,6 +69,5 @@
 }
 
 .slider__circle{
-  padding-top: rem(32px);
   text-align: center;
 }
