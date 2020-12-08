@@ -7630,6 +7630,10 @@ body {
   color: #fff;
 }
 
+.standard_link {
+  margin-top: 20px;
+}
+
 .contact {
   display: flex;
 }
