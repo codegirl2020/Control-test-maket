@@ -7291,7 +7291,7 @@ body {
   line-height: 1.625rem;
   font-family: "Montserrat-Bold";
   position: absolute;
-  top: 100%;
+  top: 110%;
   left: 50%;
 }
 
@@ -7459,6 +7459,7 @@ body {
 .team__link:hover {
   background-color: #81dbdb;
   color: #4e5152;
+  transition: all 0.5s linear;
 }
 
 .brands {
